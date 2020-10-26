@@ -10,7 +10,7 @@
     "declaration": false,
     "skipLibCheck": true,
     "stripInternal": true,
-    "lib": ["dom", "es2015"],
+    "lib": ["dom", "es2015", "es2017"],
     "types": [
       "dragula",
       "jasmine",

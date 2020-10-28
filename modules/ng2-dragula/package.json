@@ -1,7 +1,7 @@
 {
   "name": "@cosium-fork/ng2-dragula",
   "private": false,
-  "version": "2.1.5-0",
+  "version": "2.1.5",
   "description": "Simple drag and drop with dragula",
   "repository": {
     "type": "git",

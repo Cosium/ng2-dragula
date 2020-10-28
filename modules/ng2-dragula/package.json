@@ -25,7 +25,7 @@
   "homepage": "https://github.com/valor-software/ng2-dragula#readme",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "ng build",
+    "build": "ng build --prod",
     "lib.build": "yarn clean && yarn build",
     "lint": "tslint --config tslint.json src/**/*.ts",
     "docs": "compodoc -p tsconfig.json -c compodoc.json src",
@@ -33,8 +33,7 @@
     "test:headless": "ng test --browsers=CustomChromeHeadless",
     "test-coverage": "yarn test --code-coverage --watch=false --progress=false",
     "prepare": "yarn clean && yarn build",
-    "watch": "chokidar 'src/**/*.ts' 'src/**/*.html' 'src/**/*.scss' -c 'yarn build'",
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+    "watch": "chokidar 'src/**/*.ts' 'src/**/*.html' 'src/**/*.scss' -c 'yarn build'"
   },
   "dependencies": {
     "@types/dragula": "^2.1.34",

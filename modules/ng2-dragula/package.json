@@ -1,7 +1,7 @@
 {
   "name": "@cosium-fork/ng2-dragula",
   "private": false,
-  "version": "2.1.1-1",
+  "version": "2.1.1-2",
   "publishConfig": {
     "registry": "https://nexus.cosium.dev/repository/npm-releases/"
   },

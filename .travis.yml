@@ -21,12 +21,12 @@ script:
   - yarn
   - yarn lerna run clean
   - yarn lerna bootstrap
-  - yarn workspace ng2-dragula test-coverage
-  - yarn workspace ng2-dragula build --prod
+  - yarn workspace @cosium-fork/ng2-dragula test-coverage
+  - yarn workspace @cosium-fork/ng2-dragula build --prod
   - yarn workspace demo build --prod --progress=false
 
 after_success:
-  - yarn workspace ng2-dragula codecov
+  - yarn workspace @cosium-fork/ng2-dragula codecov
 
 deploy:
   provider:     pages
